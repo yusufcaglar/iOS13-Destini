@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Destini" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="D7A-o9-TYN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLQ-w9-C6q">
+                                <rect key="frame" x="20" y="0.0" width="355" height="383"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="29"/>
+                                <color key="textColor" red="0.99887698889999998" green="1" blue="0.82350206380000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tqq-rW-UqL">
+                                <rect key="frame" x="3.5" y="449" width="368" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="Sbz-CM-M58"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <state key="normal" title="Choice 1" backgroundImage="choice1">
+                                    <color key="titleColor" red="0.99887698889999998" green="1" blue="0.82350206380000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tSO-LQ-WD2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9d-Lh-3ME">
+                                <rect key="frame" x="3.5" y="553" width="368" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="ZD8-hT-P6f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <state key="normal" title="Choice 2" backgroundImage="choice2">
+                                    <color key="titleColor" red="0.66828173400000002" green="0.58154243230000002" blue="0.85493117569999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2uk-n6-alg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="L9d-Lh-3ME" firstAttribute="top" secondItem="Tqq-rW-UqL" secondAttribute="bottom" id="8Ur-MY-vou"/>
+                            <constraint firstItem="Tqq-rW-UqL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D9v-Vy-gWd"/>
+                            <constraint firstItem="L9d-Lh-3ME" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WyX-Q3-e8q"/>
+                            <constraint firstItem="aLQ-w9-C6q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eDn-6A-Hfa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L9d-Lh-3ME" secondAttribute="bottom" constant="10" id="ef5-TB-VVu"/>
+                            <constraint firstItem="aLQ-w9-C6q" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iTS-70-2sa"/>
+                            <constraint firstItem="Tqq-rW-UqL" firstAttribute="top" secondItem="aLQ-w9-C6q" secondAttribute="bottom" constant="66" id="rls-Df-YwA"/>
+                            <constraint firstItem="aLQ-w9-C6q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uxs-AF-1rw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="choice1Button" destination="Tqq-rW-UqL" id="ltS-ym-Hdk"/>
+                        <outlet property="choice2Button" destination="L9d-Lh-3ME" id="C1T-Tp-PRf"/>
+                        <outlet property="storyLabel" destination="aLQ-w9-C6q" id="egP-UC-Kpw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="414" height="896"/>
+        <image name="choice1" width="368" height="104"/>
+        <image name="choice2" width="368" height="104"/>
+    </resources>
+</document>
